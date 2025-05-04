@@ -39,7 +39,7 @@ The architecture consists of interconnected agents, each responsible for a speci
 | Orchestration | [`LangGraph`](https://www.langgraph.dev/)      |
 | Agent Logic   | [`LangChain`](https://www.langchain.com/) + Google Gemini Flash 2.0 |
 | Data Handling | `pandas`, `scikit-learn`         |
-| Evaluation    | `matplotlib`, `sklearn.metrics`  |
+| Evaluation    | `matplotlib`, `sklearn.metrics`, `xgboost`  |
 | Memory        | Shared app state |
 
 ---
