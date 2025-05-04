@@ -1,5 +1,6 @@
 import os
 import re
+import tempfile
 import streamlit as st
 from utils import clear_files, ext_exists
 from schemas import State
@@ -9,9 +10,6 @@ from langchain_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langgraph.graph import START, StateGraph
 from langgraph.prebuilt import create_react_agent
-import tempfile # Import tempfile
-import pandas as pd # Import pandas if not already imported
-
 
 model_extensions = ['pkl', 'sav', 'joblib', 'pt', 'pth', 'h5', 'keras', 'tflite', 'pmml', 'onnx', 'json']
 # Clear files before the run
@@ -246,9 +244,7 @@ if st.button("Run"):
             # Save the uploaded file to the temporary path
             with open(temp_filepath, "wb") as f:
                 f.write(uploaded_file.getbuffer())
-            
-            st.info(f"Dataset saved temporarily to: {temp_filepath}") # Optional: show temp path
-            
+                
             # Run the AutoML process with the file path
             run_automl(business_goal, temp_filepath, verbose, max_retries)
             
