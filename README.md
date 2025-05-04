@@ -8,7 +8,7 @@
 
 A **multi-agent system** of LLMs that automates the entire machine learning pipeline — from problem framing to feature engineering, model selection, tuning, and evaluation — using a graph of cooperating agents.
 
-Think of it as an **AI-powered ML team**, where each agent has a role, a purpose, and memory. Together, they solve real-world ML tasks, with minimal human input.s
+Think of it as an **AI-powered ML team**, where each agent has a role, a purpose, and memory. Together, they solve real-world ML tasks, with minimal human input.
 
 ---
 
@@ -25,11 +25,11 @@ All driven by LLM agents orchestrated through **LangGraph**.
 
 ## 🧱 Architecture
 
-```markdown
 ![System Architecture](assets/graph.png)
 
 The architecture consists of interconnected agents, each responsible for a specific stage of the ML pipeline. These agents communicate through a shared graph structure, enabling seamless collaboration and task delegation.
-```
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -50,3 +50,8 @@ The app is deployed on Streamlit and can be accessed via the following [link](ht
 Once you enter the website, you will be asked to provide the business goal, the dataset in csv format, and a couple of optional parameters.
 > Note: the system is optimized for solving classical Machine Learning problems like classificication and regression. Prompting it to solve a Deep Learning problem will yield unexpected results.
 Once you click Run, the agents will take over, step by step. If something goes unexpectedly, the agents will go back to the start and try again.
+
+
+## End Result
+
+At the end, you will recieve a summary of what was done by the system, get visualizations (if Verbose output is set), and the trained model, which you will be able to download and use for your task.
