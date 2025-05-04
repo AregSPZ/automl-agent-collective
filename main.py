@@ -237,7 +237,7 @@ uploaded_file = st.file_uploader("Submit your dataset (.csv):") # Changed variab
 verbose = st.checkbox("Display the decision making process")
 max_retries = st.number_input("Max Retries", min_value=1, max_value=10, value=3)
 
-if st.button("Run AutoML"):
+if st.button("Run"):
     if uploaded_file is not None:
         # Create a temporary directory to store the uploaded file
         with tempfile.TemporaryDirectory() as temp_dir:
