@@ -1,0 +1,11 @@
+langchain==0.3.25
+langchain-google-genai==2.1.4
+langgraph==0.4.1
+pandas==2.2.3
+scikit-learn==1.6.1
+matplotlib==3.10.1
+typing-extensions==4.13.2
+pydantic==2.11.4
+streamlit==1.45.0
+kagglehub==0.3.12
+langsmith==0.3.42
