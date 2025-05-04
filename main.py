@@ -1,9 +1,7 @@
 import os
 import re
-import kagglehub
 import streamlit as st
 from utils import clear_files, ext_exists
-from config import google_api_key, langsmith_api_key
 from schemas import State
 from prompts import agent_actions, prompts
 from tools import toolkit
@@ -20,9 +18,9 @@ model_extensions = ['pkl', 'sav', 'joblib', 'pt', 'pth', 'h5', 'keras', 'tflite'
 clear_files(['csv', 'png', 'jpg'] + model_extensions)
 
 # Setup
-os.environ["GOOGLE_API_KEY"] = google_api_key
+#os.environ["GOOGLE_API_KEY"] = google_api_key
 # langsmith is useful for tracking what your app's LLMs do under the hood
-os.environ["LANGSMITH_API_KEY"] = langsmith_api_key
+#os.environ["LANGSMITH_API_KEY"] = langsmith_api_key
 #os.environ["LANGSMITH_TRACING"] = "true"
 
 # define the base LLM which will be used to power each agent
