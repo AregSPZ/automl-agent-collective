@@ -2,6 +2,7 @@
 
 > Built with [LangChain](https://www.langchain.com/), [LangGraph](https://www.langgraph.dev/), and classic ML tools.
 
+> Disclaimer: Due to uncertain nature of LLMs, iteration might be necessary to achieve a solution.
 ---
 
 ## 🧠 What It Is
