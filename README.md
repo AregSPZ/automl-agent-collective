@@ -26,7 +26,7 @@ All driven by LLM agents orchestrated through **LangGraph**.
 ## 🧱 Architecture
 
 ```markdown
-![System Architecture](assets\graph.png)
+![System Architecture](assets/graph.png)
 
 The architecture consists of interconnected agents, each responsible for a specific stage of the ML pipeline. These agents communicate through a shared graph structure, enabling seamless collaboration and task delegation.
 ```
@@ -45,5 +45,8 @@ The architecture consists of interconnected agents, each responsible for a speci
 
 ## 🚀 Running It
 
+The app is deployed on Streamlit and can be accessed via the following [link](https://aregspz-automl-agent-collective-main-naqz5l.streamlit.app/). Streamlit is a high level framework which handles the complexities of web frontend and provides a convenient environment for pushing Data projects into production.
 
-The agents will take over, step by step. Outputs (logs, plots, model files) will be saved in the /outputs/ directory.
+Once you enter the website, you will be asked to provide the business goal, the dataset in csv format, and a couple of optional parameters.
+> Note: the system is optimized for solving classical Machine Learning problems like classificication and regression. Prompting it to solve a Deep Learning problem will yield unexpected results.
+Once you click Run, the agents will take over, step by step. If something goes unexpectedly, the agents will go back to the start and try again.

@@ -234,7 +234,7 @@ st.title("AutoML Agent Collective")
 
 business_goal = st.text_input("Enter your business goal:")
 uploaded_file = st.file_uploader("Submit your dataset (.csv):") # Changed variable name
-verbose = st.checkbox("Enable Verbose Mode")
+verbose = st.checkbox("Display the decision making process")
 max_retries = st.number_input("Max Retries", min_value=1, max_value=10, value=3)
 
 if st.button("Run AutoML"):
