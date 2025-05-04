@@ -15,6 +15,7 @@ kagglehub = "*"
 langchain-google-genai = "*"
 langsmith = "*"
 pydantic = "*"
+xgboost = "*"
 
 [dev-packages]
 
