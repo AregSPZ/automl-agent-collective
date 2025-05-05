@@ -15,9 +15,3 @@ class State(TypedDict):
     model_path: str
     evaluation_report: str
     summary: str
-
-
-class TargetFeatureByLLM(BaseModel):
-    '''If the model has to predict the most likely target feature in the dataset, configure it to provide it in a JSON format'''
-    target: str
-    reasoning: str
